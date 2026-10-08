@@ -1,6 +1,6 @@
 {
-  "active": false,
-  "hostname": "xyrdp-5",
+  "active": true,
+  "hostname": "xyrdp-6",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Windows 10 look",
@@ -8,12 +8,12 @@
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-05T20:08:08Z",
-  "expires_at": "2026-10-06T02:03:08Z",
+  "started_at": "2026-10-08T12:10:52Z",
+  "expires_at": "2026-10-08T18:05:52Z",
   "duration_menit": 355,
-  "run_id": "37367783748",
-  "run_number": "5",
-  "run_url": "https://github.com/kndajunaap-hue/XyRDP/actions/runs/37367783748",
+  "run_id": "37775026639",
+  "run_number": "6",
+  "run_url": "https://github.com/kndajunaap-hue/XyRDP/actions/runs/37775026639",
   "mode": "bersih+win10",
   "win10": {
     "look": "ok",
@@ -40,17 +40,17 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "grafis": {
-    "vulkan": "llvmpipe (LLVM 23.1.2, 256 bits) (PHYSICAL_DEVICE_TYPE_CPU)",
-    "mesa": "26.2.4",
-    "opengl": "4.6 (Core Profile) Mesa 26.2.4 (git-9a0169f2a7) | llvmpipe (LLVM 23.1.2, 256 bits) | Mesa",
-    "note": "GPU software (CPU): OpenGL 4.6 (llvmpipe) + Vulkan lavapipe + WARP bawaan. Runner GitHub tanpa GPU fisik; 3D berat tetap lambat.",
     "adapters": "Microsoft Hyper-V Video",
-    "files": "opengl32.dll,libgallium_wgl.dll,vulkan_lvp.dll,vulkan-1.dll",
-    "debug": "",
-    "mode": "software",
-    "loader": "vulkan-1.dll 1.4.363.0 (LunarG)",
+    "install": "mesa 26.2.4.0 [Mesa/X.org]",
     "dir": "C:\\XyRDP\\grafis",
-    "install": "mesa 26.2.4.0 [Mesa/X.org]"
+    "vulkan": "llvmpipe (LLVM 23.1.2, 256 bits) (PHYSICAL_DEVICE_TYPE_CPU)",
+    "files": "opengl32.dll,libgallium_wgl.dll,vulkan_lvp.dll,vulkan-1.dll",
+    "opengl": "4.6 (Core Profile) Mesa 26.2.4 (git-9a0169f2a7) | llvmpipe (LLVM 23.1.2, 256 bits) | Mesa",
+    "loader": "vulkan-1.dll 1.4.363.0 (LunarG)",
+    "note": "GPU software (CPU): OpenGL 4.6 (llvmpipe) + Vulkan lavapipe + WARP bawaan. Runner GitHub tanpa GPU fisik; 3D berat tetap lambat.",
+    "mesa": "26.2.4",
+    "debug": "",
+    "mode": "software"
   },
   "extras": {
     "lightshot": "skip",
@@ -59,44 +59,42 @@
     "wallpaper_file": "wallpaper.jpg",
     "vscode": "skip",
     "notepadpp": "skip",
-    "admin": true
+    "admin": false
   },
   "akses": {
     "mode": "tailscale",
     "rustdesk": {
       "status": "skip",
       "service": null,
+      "id": "",
       "server": "rs-ny.rustdesk.com / rs-sg.rustdesk.com (server publik RustDesk)",
-      "client": "Unduh app RustDesk (gratis) -> masukkan ID + password",
-      "id": ""
+      "client": "Unduh app RustDesk (gratis) -> masukkan ID + password"
     },
     "tailscale": {
       "status": "ok",
-      "ip": "100.108.204.68",
-      "magicdns": "xyrdp-5.tail353740.ts.net.",
-      "hostname": "xyrdp-5",
+      "ip": "100.85.128.62",
+      "magicdns": "xyrdp-6.tail17dbaf.ts.net.",
+      "hostname": "xyrdp-6",
       "funnel": "tidak aktif",
       "funnel_addr": "",
-      "note": "Di HP: pasang app Tailscale + login akun yang sama, lalu Host=100.108.204.68 Port=3389 di XyDesk Remote (atau mstsc). Funnel: tidak aktif"
+      "note": "Di HP: pasang app Tailscale + login akun yang sama, lalu Host=100.85.128.62 Port=3389 di XyDesk Remote (atau mstsc). Funnel: tidak aktif"
     },
     "tunnel": {
       "status": "skip",
       "provider": "",
+      "host": "",
+      "port": 0,
+      "address": "",
       "rdp_local": "",
       "selftest": "",
       "outside": "",
       "note2": "",
-      "note": "Isi Host+Port ini di XyDesk Remote (Koneksi RDP) atau mstsc; user xyadmin",
-      "host": "",
-      "port": 0,
-      "address": ""
+      "note": "Isi Host+Port ini di XyDesk Remote (Koneksi RDP) atau mstsc; user xyadmin"
     }
   },
   "memory": {
     "total_mb": 16379,
-    "available_mb": 13684,
+    "available_mb": 13733,
     "measured": "akhir setup"
-  },
-  "heartbeat_at": "2026-10-06T01:40:41Z",
-  "stopped_at": "2026-10-06T02:00:48Z"
+  }
 }
